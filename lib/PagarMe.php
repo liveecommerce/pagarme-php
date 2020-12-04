@@ -26,7 +26,7 @@ use PagarMe\Sdk\Balance\BalanceHandler;
 
 class PagarMe
 {
-    const VERSION = '3.8.7';
+    const VERSION = '3.8.8';
 
     /**
      * @param Client
