@@ -1,5 +1,5 @@
 {
-    "name": "pagarme/pagarme-php",
+    "name": "liveecommerce/pagarme-php",
     "description": "Pagar.Me PHP Library",
     "type": "lib",
     "keywords": [
@@ -14,7 +14,7 @@
     "license": "MIT",
     "require": {
         "php": ">=5.4.0",
-        "guzzlehttp/guzzle": "5.3.4"
+        "guzzlehttp/guzzle": ">=5.3.4"
     },
     "require-dev": {
         "ext-mbstring": "*",
