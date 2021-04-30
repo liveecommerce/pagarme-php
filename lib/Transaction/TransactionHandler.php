@@ -137,9 +137,14 @@ class TransactionHandler extends AbstractHandler
 
         $request = new PixTransactionCreate($transaction);
 
-        $response = $this->client->send($request);
-
-        return $this->buildTransaction($response);
+        try {
+            $response = $this->client->send($request);
+            return $this->buildTransaction($response);
+        } catch (Exception $e) {
+            $message = $e->getMessage();
+            $code = $e->getCode();
+            throw new Exception($message, $code);
+        }
     }
 
     /**
