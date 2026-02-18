@@ -57,7 +57,7 @@ class Client
             'body' => json_encode($this->buildBody($apiRequest)),
             'headers' => [
                 'Content-Type' => 'application/json',
-                'ServiceRefererName' => '62fa7b926ae07600199d7dfc'
+                'ServiceRefererName' => '6977cd6cc4b0bb354a03ccbd'
             ]
         ]);
 
